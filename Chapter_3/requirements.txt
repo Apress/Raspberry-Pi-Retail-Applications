@@ -1,0 +1,5 @@
+flask~=2.0
+pyqrcode~=1.2
+paypal-checkout-serversdk~=1.0
+paypalhttp~=1.0
+responses

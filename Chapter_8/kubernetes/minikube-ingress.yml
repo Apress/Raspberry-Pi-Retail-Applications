@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minikube-ingress
+  annotations:
+spec:
+  rules:
+  - host: hello.world
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: vue
+            port:
+              number: 8080
+      - path: /books
+        pathType: Prefix
+        backend:
+          service:
+            name: flask
+            port:
+              number: 5000

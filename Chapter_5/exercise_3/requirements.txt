@@ -1,0 +1,7 @@
+numpy
+pvporcupine==1.9.5
+pvrhino==1.6.3
+pyaudio
+soundfile
+pyttsx3
+halo
